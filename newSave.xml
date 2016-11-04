@@ -1,0 +1,43 @@
+<graph version="v4.05" name="" author="" interval="1" timeMode="asynchronous" distributionMode="fixed speed" speed="100" actions="1" dice="D6" skill="" strategy="" multiplayer="" width="800" height="1120" numberOfRuns="100" visibleRuns="25" colorCoding="0">
+  <connection type="Resource Connection" start="-1" end="-1" label="" position="0.5" color="Black" thickness="2">
+    <point x="255" y="754"/>
+    <point x="255" y="754"/>
+  </connection>
+  <connection type="Resource Connection" start="23" end="20" label="" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="20" end="7" label=">=12" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="27" label="10" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="34" end="5" label="+1/5" position="0.5" color="Black" thickness="2"/>
+  <connection type="State Connection" start="22" end="23" label="1%" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="24" end="25" label="10" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="EndCondition" x="188" y="1065" color="Black" caption="next level" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Gate" x="229" y="477" color="Black" caption="enemyKillChance" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1" gateType="skill"/>
+  <connection type="State Connection" start="33" end="16" label="&lt;=0" position="0.9" color="Black" thickness="2"/>
+  <node symbol="Source" x="231" y="644" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Drain" x="658" y="481" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Gate" x="651" y="655" color="Black" caption="playerHitChance" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="skill"/>
+  <connection type="State Connection" start="34" end="24" label="+5" position="0.5" color="Black" thickness="2"/>
+  <node symbol="GroupBox" x="160" y="395" color="Black" caption="Negative feedback" width="557.3667602539063" height="331.0344543457031" captionPos="9"/>
+  <node symbol="GroupBox" x="244" y="93" color="Black" caption="Dynamic engine" width="399.8125915527344" height="257.0681610107422" captionPos="7"/>
+  <node symbol="EndCondition" x="145" y="282" color="Black" caption="death" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1"/>
+  <node symbol="Drain" x="273" y="169" color="Black" caption="Freezing" thickness="2" captionPos="0.75" activationMode="automatic" pullMode="pull any" actions="1"/>
+  <connection type="Resource Connection" start="10" end="34" label="+1" position="0.5" color="Black" thickness="2"/>
+  <connection type="Resource Connection" start="27" end="28" label="+1" position="0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="189" y="895" color="Black" caption="Obstacle(lock)" thickness="2" captionPos="0.75" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="12"/>
+  <node symbol="GroupBox" x="73" y="813" color="Black" caption="positive feedback" width="516.1793212890625" height="152.70684814453125" captionPos="7"/>
+  <node symbol="Gate" x="481" y="895" color="Black" caption="Hearts(key)" thickness="2" captionPos="0.25" activationMode="automatic" pullMode="pull any" actions="1" gateType="dice"/>
+  <node symbol="Source" x="298" y="897" color="Black" caption="" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="592" y="244" color="Black" caption="Energy" thickness="2" captionPos="0.75" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" capacity="100" displayCapacity="0"/>
+  <node symbol="Trader" x="504" y="255" color="Black" caption="boost" thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <connection type="Resource Connection" start="25" end="33" label="+20" position="-0.13" color="Black" thickness="2"/>
+  <node symbol="Trader" x="480" y="146" color="Black" caption="..." thickness="2" captionPos="0.75" activationMode="interactive" pullMode="pull any" actions="1" resourceColor="Black"/>
+  <node symbol="Pool" x="400" y="201" color="Black" caption="sunflowers" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="0" capacity="5"/>
+  <connection type="Resource Connection" start="33" end="17" label="10/10" position="0.8300000000000001" color="Black" thickness="2"/>
+  <connection type="State Connection" start="28" end="29" label="-2" position="0.3" color="Black" thickness="2"/>
+  <connection type="State Connection" start="33" end="32" label="+1/4" position="0.44" color="Black" thickness="2"/>
+  <connection type="State Connection" start="8" end="10" label="25%" position="-0.5" color="Black" thickness="2"/>
+  <node symbol="Pool" x="376" y="538" color="Black" caption="Heat" thickness="2" captionPos="0.25" activationMode="passive" pullMode="push any" actions="1" resourceColor="Black" startingResources="100" capacity="100" displayCapacity="0"/>
+  <node symbol="Pool" x="520" y="600" color="Black" caption="%killedEnemies" thickness="2" captionPos="0.25" activationMode="passive" pullMode="pull any" actions="1" resourceColor="Black" startingResources="0" capacity="100" displayCapacity="0"/>
+  <connection type="Resource Connection" start="33" end="11" label="10" position="0.34" color="Black" thickness="2"/>
+  <connection type="State Connection" start="12" end="11" label="5%" position="-0.44" color="Black" thickness="2"/>
+  <connection type="State Connection" start="34" end="36" label="-1/20" position="-0.5" color="Black" thickness="2"/>
+</graph>
